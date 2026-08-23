@@ -1,37 +1,15 @@
-// // // if statement
+// white space
+const a = "   Hello, World!   ";
 
-// // // let age = 20 ;
+console.log(a.trim());
 
-// // // if (age >= 18 ) {
-// // //     console.log ("can vote")
-// // // };
+const b = "   JavaScript   ";
 
+console.log(b.trimStart()); 
+console.log(b.trimEnd());  
+console.log(b.trim());      
 
-// // // if else if else
+// spliting string
+const str = "Hello World JavaScript";
 
-// //    let marks = 75 ;
-
-// //    if (marks >= 60) {
-// //     console.log("C")
-// //    } else if (marks >= 70) {
-// //     console.log("B")
-// //    } else if ( marks >= 80) {
-// //     console.log ("A")
-// //    } else if ( marks >= 90) {
-// //     console.log ("A+")
-// //    } else { 
-// //     console.log("fail");
-// //    }
-
-
-// // Ternary Operator (? :)
-
-// let age = 20;
-
-// let result = (age >= 18) ? "Adult" : "Minor";
-// console.log(result);
-
-let height = 6 ;
-
-let result = (height >= 5.5) ? "Eligible" : "not Eligible";
-console.log(result);
+console.log(str.split(" "));
