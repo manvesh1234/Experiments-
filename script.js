@@ -79,7 +79,16 @@
 
 // console.log(arr.indexOf(80));
 
-const arr = [90,'Rohit','Mohit',true];
+// const arr = [90,'Rohit','Mohit',true];
 
-arr.sort();
+// arr.sort();
+// console.log(arr);
+
+// flatting array 
+
+const arr = [10,30,50,[40,90,[60,19,99],11],80];
+
+console.log(arr[3][2][1]);
+
+let a = [10, 20, 30, 40, 50];
 console.log(arr);
