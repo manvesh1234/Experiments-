@@ -86,9 +86,45 @@
 
 // flatting array 
 
-const arr = [10,30,50,[40,90,[60,19,99],11],80];
+// const arr = [10,30,50,[40,90,[60,19,99],11],80];
 
-console.log(arr[3][2][1]);
+// console.log(arr[3][2][1]);
 
-let a = [10, 20, 30, 40, 50];
+// practice level 1 
+
+//Print the first, third, and last element.
+ let b = [10, 20, 30, 40, 50]; 
+ console.log(b);
+ console.log(b[0]);
+ console.log(b[2]);              
+console.log(b[4]); 
+
+// Remove the last element and the first element.
+let arr = [10, 20, 30, 40, 50];
+arr.pop();
+arr.shift();
 console.log(arr);
+
+// Change "CSS" to "Tailwind".
+let a = ["HTML", "CSS", "JavaScript"];
+a[1] = 'tailwind';
+console.log(a);
+
+// Add 40 at the end and 5 at the beginning.
+let c = [10, 20, 30];
+c.unshift(5);
+c.push(40);
+console.log(c);
+
+// Print the number of elements.
+let d = ["Apple", "Banana", "Mango", "Orange"];
+console.log(d.length)
+console.log(d[3].length);
+
+
+
+
+
+
+
+
