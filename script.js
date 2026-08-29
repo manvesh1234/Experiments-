@@ -259,26 +259,195 @@
 
 // console.log(newioo);
 
-let ju = [10,30,"Mohan","Rahul"];
-let ar = [50,"Pune",70,"Poster"]
-let newju = [...ar,...ju]
+// let ju = [10,30,"Mohan","Rahul"];
+// let ar = [50,"Pune",70,"Poster"]
+// let newju = [...ar,...ju]
 
-console.log(newju);
+// console.log(newju);
 
-maar = [...ju,50,"modi ji"];
-console.log("maar");
+// maar = [...ju,50,"modi ji"];
+// console.log("maar");
 
 
-// splice
+// // splice
 
-let sweets = ["rasmalai","chocolate","kajukatali","rabadi"];
+// let sweets = ["rasmalai","chocolate","kajukatali","rabadi"];
 
- sweets.splice(1,3);
- console.log(sweets)
+//  sweets.splice(1,3);
+//  console.log(sweets)
  
-sweets.splice(1,3,"banana","Apple");
-console.log(sweets);
+// sweets.splice(1,3,"banana","Apple");
+// console.log(sweets);
 
-sweets.splice(1,3,"Grapes");
-console.log(sweets);
+// sweets.splice(1,3,"Grapes");
+// console.log(sweets);
+
+// OBJECTS
+
+// const car = {
+//   brand: "Toyota",
+//   model: "Corolla",
+//   year: 2025
+// };
+
+
+// const fruits = ["Apple", "Banana", "Mango"];
+
+// const first = fruits[0];
+// const second = fruits[1];
+// const third = fruits[2];
+
+// console.log(first,second,third);  
+
+// console.log("Hello World");
+
+// function addNumber(...num){
+
+//     let sum =0;
+
+//     for(let n of num){
+//         sum+=n;
+//     }
+
+//     console.log(sum);
+
+// }
+
+// addNumber(6,7);
+// addNumber(5,6,7);
+// addNumber(8,79,56,9);
+// addNumber(34,5,67,89);
+
+// Functions in js 
+
+// function Hero () {
+//     console.log("hello Manvesh")
+// }
+
+// Hero();
+
+// function add (num1,num2) {
+//     let into = num1*num2
+//     console.log(into)
+// }
+
+// add(5,5);
+
+// // funtion fox () {}
+
+// function add() {
+//     console.log(10 + 20);
+// }
+
+// add(); 
+
+// const abc = () => {
+//     let a = 3;
+//     let b = 2;
+//     return a + b;
+// }
+
+// abc();
+
+// console.log(abc());
+
+// Level 1 
+
+// Q1. Create a function called hello that prints "Hello".
+
+// Q2. Create a function called welcome that prints "Welcome to JavaScript".
+
+// Q3. Create a function called sum that prints 10 + 20.
+
+// Q4. Create a function called bye that prints "Good Bye".
+
+
+// function addNumber (num1,num2)
+//      {const sum = num1 + num2;
+//       console.log(sum)};
+
+    
+// addNumber(4,54);
+
+// function mama () {
+//     console.log("Hello")
+// }
+
+// mama();
+
+// function xyz (num1,num2) {
+//     let sum = num1 + num2 ;
+//     console.log(sum)
+// };
+
+// xyz(10,20);
+
+
+// function welcome () {
+//     console.log("Welcome to js")
+// }
+
+// welcome ();
+
+
+// function bye () {
+//     console.log("bye")
+// }
+
+// bye ();
+
+// let getNumber = () => {
+//     return 10;
+// };
+
+// let result = getNumber();
+
+// console.log(result);
+
+
+// let a = result*8
+
+// console.log(a)
+
+
+// function add () {
+//     return 5 + 10;
+// };
+
+// let a = add();
+
+// console.log(a);
+
+// let double = (num) => {
+//     return num * 2;
+// };
+
+// let d = double(5);
+
+// console.log(d);
+
+// const add = (num1,num2) => {
+//     let sum = num1 + num2;
+//     return sum;
+// }
+
+// let a = add(4,6);
+
+// console.log(a);
+
+let ad = () => {
+    return 5 + 10;
+};
+
+let result = ad()
+
+console.log(result);
+
+
+
+
+
+
+
+
 
