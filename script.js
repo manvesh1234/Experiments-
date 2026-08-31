@@ -1,453 +1,558 @@
-// // // // // white space
-// // // // const a = "   Hello, World!   ";
+// // // // // // // // // // white space
+// // // // // // // // // const a = "   Hello, World!   ";
 
-// // // // console.log(a.trim());
+// // // // // // // // // console.log(a.trim());
 
-// // // // const b = "   JavaScript   ";
+// // // // // // // // // const b = "   JavaScript   ";
 
-// // // // console.log(b.trimStart()); 
-// // // // console.log(b.trimEnd());  
-// // // // console.log(b.trim());      
+// // // // // // // // // console.log(b.trimStart()); 
+// // // // // // // // // console.log(b.trimEnd());  
+// // // // // // // // // console.log(b.trim());      
 
-// // // // // spliting string
-// // // // const str = "Hello World JavaScript";
+// // // // // // // // // // spliting string
+// // // // // // // // // const str = "Hello World JavaScript";
 
-// // // // console.log(str.split(" "));
+// // // // // // // // // console.log(str.split(" "));
 
-// // // // const now = new Date();
+// // // // // // // // // const now = new Date();
 
-// // // // console.log(now);
+// // // // // // // // // console.log(now);
 
-// // // // date time in js 
+// // // // // // // // // date time in js 
 
-// // // //  const now = new Date();
+// // // // // // // // //  const now = new Date();
 
-// // // // console.log( now.getDay());
-// // // // console.log("Date:", now.getDate());
-// // // // console.log("Month:", now.getMonth() + 1);
+// // // // // // // // // console.log( now.getDay());
+// // // // // // // // // console.log("Date:", now.getDate());
+// // // // // // // // // console.log("Month:", now.getMonth() + 1);
 
-// // // // const now = new Date();
+// // // // // // // // // const now = new Date();
 
-// // // // console.log(now.toUTCString());
+// // // // // // // // // console.log(now.toUTCString());
 
-// // // // Array
+// // // // // // // // // Array
 
-// // // // let arr = [100,30,"Manvesh",true]
+// // // // // // // // // let arr = [100,30,"Manvesh",true]
 
-// // // // console.log(arr[2]);
+// // // // // // // // // console.log(arr[2]);
 
-// // // // let arr = [100,90,'Manvesh',true]
+// // // // // // // // // let arr = [100,90,'Manvesh',true]
 
-// // // // arr.push(90);
-// // // // console.log(arr);
+// // // // // // // // // arr.push(90);
+// // // // // // // // // console.log(arr);
 
-// // // let p = [10,30,50,90,11];
+// // // // // // // // let p = [10,30,50,90,11];
 
-// // // // for(let i=0;i<p.length;i++){
-// // // //     console.log(p[i])
-// // // // }
+// // // // // // // // // for(let i=0;i<p.length;i++){
+// // // // // // // // //     console.log(p[i])
+// // // // // // // // // }
 
-// // // for (let apple of p) {
-// // //     console.log(apple);
-// // // }
+// // // // // // // // for (let apple of p) {
+// // // // // // // //     console.log(apple);
+// // // // // // // // }
 
 
-// // // let arr = [10, 20, 30, 40, 50];
+// // // // // // // // let arr = [10, 20, 30, 40, 50];
 
-// // // arr.splice(1, 3);
+// // // // // // // // arr.splice(1, 3);
 
-// // // console.log(arr); 
+// // // // // // // // console.log(arr); 
 
-// // // const arr = [10,20,30,50,90,11];
+// // // // // // // // const arr = [10,20,30,50,90,11];
 
-// // // console.log(arr.splice(1,3));
+// // // // // // // // console.log(arr.splice(1,3));
 
-// // // const arr = [10, 20, 30, 50, 90, 11];
+// // // // // // // // const arr = [10, 20, 30, 50, 90, 11];
 
-// // // let removed = arr.splice(1, 3);
+// // // // // // // // let removed = arr.splice(1, 3);
 
-// // // console.log(removed); // [20, 30, 50]
-// // // console.log(arr);     // [10, 90, 11];
+// // // // // // // // console.log(removed); // [20, 30, 50]
+// // // // // // // // console.log(arr);     // [10, 90, 11];
 
-// // // let fruits = ["Apple", "Banana", "Orange","PineApple"];
+// // // // // // // // let fruits = ["Apple", "Banana", "Orange","PineApple"];
 
-// // // fruits.splice(1, 3, "Grapes");
+// // // // // // // // fruits.splice(1, 3, "Grapes");
 
-// // // console.log(fruits);
+// // // // // // // // console.log(fruits);
 
-// // // let arr = [10, 20, 30, 20, 40];
+// // // // // // // // let arr = [10, 20, 30, 20, 40];
 
-// // // console.log(arr.indexOf(80));
+// // // // // // // // console.log(arr.indexOf(80));
 
-// // // const arr = [90,'Rohit','Mohit',true];
+// // // // // // // // const arr = [90,'Rohit','Mohit',true];
 
-// // // arr.sort();
-// // // console.log(arr);
+// // // // // // // // arr.sort();
+// // // // // // // // console.log(arr);
 
-// // // flatting array 
+// // // // // // // // flatting array 
 
-// // // const arr = [10,30,50,[40,90,[60,19,99],11],80];
+// // // // // // // // const arr = [10,30,50,[40,90,[60,19,99],11],80];
 
-// // // console.log(arr[3][2][1]);
+// // // // // // // // console.log(arr[3][2][1]);
 
-// // // practice level 1 
+// // // // // // // // practice level 1 
 
-// // //Print the first, third, and last element.
-// //  let b = [10, 20, 30, 40, 50]; 
-// //  console.log(b);
-// //  console.log(b[0]);
-// //  console.log(b[2]);              
-// // console.log(b[4]); 
+// // // // // // // //Print the first, third, and last element.
+// // // // // // //  let b = [10, 20, 30, 40, 50]; 
+// // // // // // //  console.log(b);
+// // // // // // //  console.log(b[0]);
+// // // // // // //  console.log(b[2]);              
+// // // // // // // console.log(b[4]); 
 
-// // // Remove the last element and the first element.
-// // // let arr = [10, 20, 30, 40, 50];
-// // // arr.pop();
-// // // arr.shift();
-// // // console.log(arr);
+// // // // // // // // Remove the last element and the first element.
+// // // // // // // // let arr = [10, 20, 30, 40, 50];
+// // // // // // // // arr.pop();
+// // // // // // // // arr.shift();
+// // // // // // // // console.log(arr);
 
-// // // // Change "CSS" to "Tailwind".
-// // // let a = ["HTML", "CSS", "JavaScript"];
-// // // a[1] = 'tailwind';
-// // // console.log(a);
+// // // // // // // // // Change "CSS" to "Tailwind".
+// // // // // // // // let a = ["HTML", "CSS", "JavaScript"];
+// // // // // // // // a[1] = 'tailwind';
+// // // // // // // // console.log(a);
 
-// // // // Add 40 at the end and 5 at the beginning.
-// // // let c = [10, 20, 30];
-// // // c.unshift(5);
-// // // c.push(40);
-// // // console.log(c);
+// // // // // // // // // Add 40 at the end and 5 at the beginning.
+// // // // // // // // let c = [10, 20, 30];
+// // // // // // // // c.unshift(5);
+// // // // // // // // c.push(40);
+// // // // // // // // console.log(c);
 
-// // // // Print the number of elements.
-// // // let d = ["Apple", "Banana", "Mango", "Orange"];
-// // // console.log(d.length)
-// // // console.log(d[3].length);
+// // // // // // // // // Print the number of elements.
+// // // // // // // // let d = ["Apple", "Banana", "Mango", "Orange"];
+// // // // // // // // console.log(d.length)
+// // // // // // // // console.log(d[3].length);
 
 
-// // // Jogging 
+// // // // // // // // Jogging 
 
-// // // if....else  if....else
+// // // // // // // // if....else  if....else
 
-// // let age = 55
+// // // // // // // let age = 55
 
-// // if (age >= 60) {
-// //     console.log("Not Eligible");
-// // } else if (age <= 30) {
-// //     console.log("Eligible");
-// // } else {
-// //     console.log("Age is between 31 and 59 are Reserved/limited");
-// //}
+// // // // // // // if (age >= 60) {
+// // // // // // //     console.log("Not Eligible");
+// // // // // // // } else if (age <= 30) {
+// // // // // // //     console.log("Eligible");
+// // // // // // // } else {
+// // // // // // //     console.log("Age is between 31 and 59 are Reserved/limited");
+// // // // // // //}
 
-// let data = [
-//     [
-//         "India",
-//         [
-//             "Maharashtra",
-//             ["Pune", "Nagpur", "Mumbai"],
-//             [
-//                 { name: "Manvesh", age: 20 },
-//                 { name: "Rahul", age: 21 }
-//             ]
-//         ]
-//     ],
-//     [
-//         "USA",
-//         [
-//             "California",
-//             ["Los Angeles", "San Francisco"],
-//             [
-//                 { name: "John", age: 22 },
-//                 { name: "Mike", age: 24 }
-//             ]
-//         ]
-//     ]
-// ];
+// // // // // // let data = [
+// // // // // //     [
+// // // // // //         "India",
+// // // // // //         [
+// // // // // //             "Maharashtra",
+// // // // // //             ["Pune", "Nagpur", "Mumbai"],
+// // // // // //             [
+// // // // // //                 { name: "Manvesh", age: 20 },
+// // // // // //                 { name: "Rahul", age: 21 }
+// // // // // //             ]
+// // // // // //         ]
+// // // // // //     ],
+// // // // // //     [
+// // // // // //         "USA",
+// // // // // //         [
+// // // // // //             "California",
+// // // // // //             ["Los Angeles", "San Francisco"],
+// // // // // //             [
+// // // // // //                 { name: "John", age: 22 },
+// // // // // //                 { name: "Mike", age: 24 }
+// // // // // //             ]
+// // // // // //         ]
+// // // // // //     ]
+// // // // // // ];
 
 
-// let result = data.flat(Infinity);
-// console.log(result);
+// // // // // // let result = data.flat(Infinity);
+// // // // // // console.log(result);
 
-// // string access
-// let a = "Mohit";
-// console.log(a[3])
+// // // // // // // string access
+// // // // // // let a = "Mohit";
+// // // // // // console.log(a[3])
 
-// // array access 
-// let b = ["meta","tesla","dy Patil","Hrishikesh"];
-// console.log(b[3][7][9]);
+// // // // // // // array access 
+// // // // // // let b = ["meta","tesla","dy Patil","Hrishikesh"];
+// // // // // // console.log(b[3][7][9]);
 
-// let c = 7885.8596
-// let d = 547.6151
+// // // // // // let c = 7885.8596
+// // // // // // let d = 547.6151
 
-// console.log(d)
-// console.log(typeof d)
+// // // // // // console.log(d)
+// // // // // // console.log(typeof d)
 
-// let n = 7885.85296;
+// // // // // // let n = 7885.85296;
 
 
-// let x = n.toFixed(3);
+// // // // // // let x = n.toFixed(3);
 
-// console.log(x);          
-// console.log(typeof x); 
+// // // // // // console.log(x);          
+// // // // // // console.log(typeof x); 
 
 
-// let z = 184.655
-// console.log(z.toFixed(2));
+// // // // // // let z = 184.655
+// // // // // // console.log(z.toFixed(2));
 
 
-// let xyz = 3553.8379
-// console.log(Math.floor(xyz))
+// // // // // // let xyz = 3553.8379
+// // // // // // console.log(Math.floor(xyz))
 
-// console.log(Math.floor(Math.random()*10+1));
+// // // // // // console.log(Math.floor(Math.random()*10+1));
 
 
-// console.log(Math.floor(Math.random()*5+1));
+// // // // // // console.log(Math.floor(Math.random()*5+1));
 
-// // Template Literals 
+// // // // // // // Template Literals 
 
-// let interest = ["chess","Football","swimming","reading books"];
+// // // // // // let interest = ["chess","Football","swimming","reading books"];
 
 
-// console.log(`I am very adventurous person ${interest} and i like to do this`);
+// // // // // // console.log(`I am very adventurous person ${interest} and i like to do this`);
 
-// console.log(interest.length);
+// // // // // // console.log(interest.length);
 
-// console.log(interest[5]);
-// console.log(interest[3]);
+// // // // // // console.log(interest[5]);
+// // // // // // console.log(interest[3]);
 
-// let gh = `Taj mahal is my Favuorite Location`;
-// console.log(gh.toUpperCase());
-// console.log(gh.toLocaleLowerCase());
+// // // // // // let gh = `Taj mahal is my Favuorite Location`;
+// // // // // // console.log(gh.toUpperCase());
+// // // // // // console.log(gh.toLocaleLowerCase());
 
-//  console.log(gh.slice(4,13));
+// // // // // //  console.log(gh.slice(4,13));
  
-// // trim
+// // // // // // // trim
 
-// let df = `     i love reading books `;
+// // // // // // let df = `     i love reading books `;
 
-// console.log(df.trim());
-// console.log(df.trimEnd());
-// console.log(df.split(","));
+// // // // // // console.log(df.trim());
+// // // // // // console.log(df.trimEnd());
+// // // // // // console.log(df.split(","));
 
-// var fg = "Building caffine with code";
+// // // // // // var fg = "Building caffine with code";
 
-// console.log(fg.split(" "));
+// // // // // // console.log(fg.split(" "));
 
-// // For of loop
+// // // // // // // For of loop
 
-// let jk = ["Modi","Rahul","kejriwwal","mamta did","fadanvis"]
+// // // // // // let jk = ["Modi","Rahul","kejriwwal","mamta did","fadanvis"]
 
-// for(let value of jk ){
-//     console.log(value)
-// }
+// // // // // // for(let value of jk ){
+// // // // // //     console.log(value)
+// // // // // // }
 
-// console.log("");
+// // // // // // console.log("");
 
-// let words = "Building caffeine with code".split(" ");
+// // // // // // let words = "Building caffeine with code".split(" ");
 
-// for (let word of words) {
-//     console.log(word);
-// }
+// // // // // // for (let word of words) {
+// // // // // //     console.log(word);
+// // // // // // }
 
 
-// let hj = ["hero","villian","legend","pro","Hacker","developer"];
+// // // // // // let hj = ["hero","villian","legend","pro","Hacker","developer"];
  
-// let l = hj.slice(3,5);
-// console.log(l);
+// // // // // // let l = hj.slice(3,5);
+// // // // // // console.log(l);
 
-// // copying an array
+// // // // // // // copying an array
 
-// let ioo = ["book","buket","aalo","pen"];
-// let newioo = [...ioo];
+// // // // // // let ioo = ["book","buket","aalo","pen"];
+// // // // // // let newioo = [...ioo];
 
-// console.log(newioo);
+// // // // // // console.log(newioo);
 
-// let ju = [10,30,"Mohan","Rahul"];
-// let ar = [50,"Pune",70,"Poster"]
-// let newju = [...ar,...ju]
+// // // // // // let ju = [10,30,"Mohan","Rahul"];
+// // // // // // let ar = [50,"Pune",70,"Poster"]
+// // // // // // let newju = [...ar,...ju]
 
-// console.log(newju);
+// // // // // // console.log(newju);
 
-// maar = [...ju,50,"modi ji"];
-// console.log("maar");
+// // // // // // maar = [...ju,50,"modi ji"];
+// // // // // // console.log("maar");
 
 
-// // splice
+// // // // // // // splice
 
-// let sweets = ["rasmalai","chocolate","kajukatali","rabadi"];
+// // // // // // let sweets = ["rasmalai","chocolate","kajukatali","rabadi"];
 
-//  sweets.splice(1,3);
-//  console.log(sweets)
+// // // // // //  sweets.splice(1,3);
+// // // // // //  console.log(sweets)
  
-// sweets.splice(1,3,"banana","Apple");
-// console.log(sweets);
+// // // // // // sweets.splice(1,3,"banana","Apple");
+// // // // // // console.log(sweets);
 
-// sweets.splice(1,3,"Grapes");
-// console.log(sweets);
+// // // // // // sweets.splice(1,3,"Grapes");
+// // // // // // console.log(sweets);
 
-// OBJECTS
+// // // // // // OBJECTS
 
-// const car = {
-//   brand: "Toyota",
-//   model: "Corolla",
-//   year: 2025
-// };
-
-
-// const fruits = ["Apple", "Banana", "Mango"];
-
-// const first = fruits[0];
-// const second = fruits[1];
-// const third = fruits[2];
-
-// console.log(first,second,third);  
-
-// console.log("Hello World");
-
-// function addNumber(...num){
-
-//     let sum =0;
-
-//     for(let n of num){
-//         sum+=n;
-//     }
-
-//     console.log(sum);
-
-// }
-
-// addNumber(6,7);
-// addNumber(5,6,7);
-// addNumber(8,79,56,9);
-// addNumber(34,5,67,89);
-
-// Functions in js 
-
-// function Hero () {
-//     console.log("hello Manvesh")
-// }
-
-// Hero();
-
-// function add (num1,num2) {
-//     let into = num1*num2
-//     console.log(into)
-// }
-
-// add(5,5);
-
-// // funtion fox () {}
-
-// function add() {
-//     console.log(10 + 20);
-// }
-
-// add(); 
-
-// const abc = () => {
-//     let a = 3;
-//     let b = 2;
-//     return a + b;
-// }
-
-// abc();
-
-// console.log(abc());
-
-// Level 1 
-
-// Q1. Create a function called hello that prints "Hello".
-
-// Q2. Create a function called welcome that prints "Welcome to JavaScript".
-
-// Q3. Create a function called sum that prints 10 + 20.
-
-// Q4. Create a function called bye that prints "Good Bye".
+// // // // // // const car = {
+// // // // // //   brand: "Toyota",
+// // // // // //   model: "Corolla",
+// // // // // //   year: 2025
+// // // // // // };
 
 
-// function addNumber (num1,num2)
-//      {const sum = num1 + num2;
-//       console.log(sum)};
+// // // // // // const fruits = ["Apple", "Banana", "Mango"];
+
+// // // // // // const first = fruits[0];
+// // // // // // const second = fruits[1];
+// // // // // // const third = fruits[2];
+
+// // // // // // console.log(first,second,third);  
+
+// // // // // // console.log("Hello World");
+
+// // // // // // function addNumber(...num){
+
+// // // // // //     let sum =0;
+
+// // // // // //     for(let n of num){
+// // // // // //         sum+=n;
+// // // // // //     }
+
+// // // // // //     console.log(sum);
+
+// // // // // // }
+
+// // // // // // addNumber(6,7);
+// // // // // // addNumber(5,6,7);
+// // // // // // addNumber(8,79,56,9);
+// // // // // // addNumber(34,5,67,89);
+
+// // // // // // Functions in js 
+
+// // // // // // function Hero () {
+// // // // // //     console.log("hello Manvesh")
+// // // // // // }
+
+// // // // // // Hero();
+
+// // // // // // function add (num1,num2) {
+// // // // // //     let into = num1*num2
+// // // // // //     console.log(into)
+// // // // // // }
+
+// // // // // // add(5,5);
+
+// // // // // // // funtion fox () {}
+
+// // // // // // function add() {
+// // // // // //     console.log(10 + 20);
+// // // // // // }
+
+// // // // // // add(); 
+
+// // // // // // const abc = () => {
+// // // // // //     let a = 3;
+// // // // // //     let b = 2;
+// // // // // //     return a + b;
+// // // // // // }
+
+// // // // // // abc();
+
+// // // // // // console.log(abc());
+
+// // // // // // Level 1 
+
+// // // // // // Q1. Create a function called hello that prints "Hello".
+
+// // // // // // Q2. Create a function called welcome that prints "Welcome to JavaScript".
+
+// // // // // // Q3. Create a function called sum that prints 10 + 20.
+
+// // // // // // Q4. Create a function called bye that prints "Good Bye".
+
+
+// // // // // // function addNumber (num1,num2)
+// // // // // //      {const sum = num1 + num2;
+// // // // // //       console.log(sum)};
 
     
-// addNumber(4,54);
+// // // // // // addNumber(4,54);
 
-// function mama () {
-//     console.log("Hello")
+// // // // // // function mama () {
+// // // // // //     console.log("Hello")
+// // // // // // }
+
+// // // // // // mama();
+
+// // // // // // function xyz (num1,num2) {
+// // // // // //     let sum = num1 + num2 ;
+// // // // // //     console.log(sum)
+// // // // // // };
+
+// // // // // // xyz(10,20);
+
+
+// // // // // // function welcome () {
+// // // // // //     console.log("Welcome to js")
+// // // // // // }
+
+// // // // // // welcome ();
+
+
+// // // // // // function bye () {
+// // // // // //     console.log("bye")
+// // // // // // }
+
+// // // // // // bye ();
+
+// // // // // // let getNumber = () => {
+// // // // // //     return 10;
+// // // // // // };
+
+// // // // // // let result = getNumber();
+
+// // // // // // console.log(result);
+
+
+// // // // // // let a = result*8
+
+// // // // // // console.log(a)
+
+
+// // // // // // function add () {
+// // // // // //     return 5 + 10;
+// // // // // // };
+
+// // // // // // let a = add();
+
+// // // // // // console.log(a);
+
+// // // // // // let double = (num) => {
+// // // // // //     return num * 2;
+// // // // // // };
+
+// // // // // // let d = double(5);
+
+// // // // // // console.log(d);
+
+// // // // // // const add = (num1,num2) => {
+// // // // // //     let sum = num1 + num2;
+// // // // // //     return sum;
+// // // // // // }
+
+// // // // // // let a = add(4,6);
+
+// // // // // // console.log(a);
+
+// // // // // // let ad = () => {
+// // // // // //     return 5 + 10;
+// // // // // // };
+
+// // // // // // let result = ad()
+
+// // // // // // console.log(result);
+
+
+// // // // // // Call Back Function
+
+// // // // // // function greet(){
+// // // // // //     console.log("Hello Ji, Kaise ho");
+// // // // // // }
+
+// // // // // // function meet(callback){
+// // // // // //     console.log("I am going to meet someone");
+// // // // // //     callback();
+// // // // // // }
+
+// // // // // // meet(greet);
+
+// // // // // // function blinkitOrderPlaced () {
+// // // // // //     console.log("we have started packing your Order");
+// // // // // // }
+ 
+// // // // // // function zomatoOrderPlaced () {
+// // // // // //     console.log("We have started preparing your food");
+// // // // // // }
+
+// // // // // // function Payment (amount, callback) {
+// // // // // //     console.log(`${amount} Payment has intialized`)
+
+// // // // // //     console.log("Payment is received");
+
+// // // // // //     callback ();
+// // // // // // }
+
+// // // // // // Payment(500,zomatoOrderPlaced);
+// // // // // // Payment(300,blinkitOrderPlaced);
+
+// // // // // let x = 10;
+
+// // // // // function outer() {
+// // // // //     let y = 20;
+
+// // // // //     function inner() {
+// // // // //         console.log(x);
+// // // // //         console.log(y);
+// // // // //     }
+
+// // // // //     inner();
+// // // // // }
+
+// // // // // outer();
+
+// // // // function outer() {
+// // // //     let x = 10;
+// // // // }
+
+// // // // function inner() {
+// // // //     console.log(x);
+// // // // }
+
+// // // // inner();
+
+// // // let name = "A";
+
+// // // function outer() {
+// // //     let name = "B";
+
+// // //     function inner() {
+// // //         console.log(name);
+// // //     }
+
+// // //     inner();
+// // // }
+
+// // // outer();
+
+// // function outer() {
+// //     let x = 10;
+
+// //     function inner() {
+// //         console.log(x);
+// //     }
+
+// //     return inner;
+// // }
+
+// // let fn = outer();
+
+// // fn();
+
+
+// function outer() {
+//     let message = "Hello";
+
+//     function inner() {
+//         console.log(message);
+//     }
+
+//     return inner;
 // }
 
-// mama();
+// let fn = outer();
 
-// function xyz (num1,num2) {
-//     let sum = num1 + num2 ;
-//     console.log(sum)
-// };
+// fn();
 
-// xyz(10,20);
+function outer() {
+    let x = 10;
 
+    return function inner() {
+        console.log(x);
+    };
+}
 
-// function welcome () {
-//     console.log("Welcome to js")
-// }
+let fn = outer();
 
-// welcome ();
-
-
-// function bye () {
-//     console.log("bye")
-// }
-
-// bye ();
-
-// let getNumber = () => {
-//     return 10;
-// };
-
-// let result = getNumber();
-
-// console.log(result);
-
-
-// let a = result*8
-
-// console.log(a)
-
-
-// function add () {
-//     return 5 + 10;
-// };
-
-// let a = add();
-
-// console.log(a);
-
-// let double = (num) => {
-//     return num * 2;
-// };
-
-// let d = double(5);
-
-// console.log(d);
-
-// const add = (num1,num2) => {
-//     let sum = num1 + num2;
-//     return sum;
-// }
-
-// let a = add(4,6);
-
-// console.log(a);
-
-let ad = () => {
-    return 5 + 10;
-};
-
-let result = ad()
-
-console.log(result);
-
-
-
-
-
-
-
-
-
+console.log("Done");
+fn();
