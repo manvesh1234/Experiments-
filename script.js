@@ -576,66 +576,102 @@
 
 // ForEach()
 
-const fruits = ["Apple", "Banana", "Mango", "Orange"];
+// const fruits = ["Apple", "Banana", "Mango", "Orange"];
 
-fruits.forEach((x) => {
-    console.log(x)
+// fruits.forEach((x) => {
+//     console.log(x)
+// });
+
+// // multiply by 2 
+
+// const number = [2,4,6,8,10];
+
+// number.forEach((x) => {
+//     console.log(x*2);
+// } );
+
+// // index + values 
+
+// const names = ["Rahul", "Amit", "Manvesh", "Rohan"];
+
+// names.forEach((x,index,value) => {
+//     console.log(x,index,value)
+// })
+
+
+// /// calculate total 
+
+// const prices = [100, 250, 50, 300];
+// let total = 0;
+
+// prices.forEach((x) => {
+//     total = total + x;
+// });
+
+// console.log(total);
+
+// // question 
+
+// const numbers = [10, 20, 30, 40];
+
+// numbers.forEach((x) => {
+//     console.log(x+5);
+// });
+
+// // index,values
+
+// const fal = ["Apple", "Banana", "Mango"];
+
+// fal.forEach((u,index,element) => {
+//     console.log(u,index,element);
+// });
+
+// // total 
+
+// const marks = [70, 80, 90, 60];
+
+// let result = 0;
+
+// marks.forEach((b) => {
+//     result = result + b;
+// });
+
+// console.log(result);
+
+// filter
+// Q1 — Numbers greater than 20
+const numbers = [10, 25, 15, 40, 5, 30];
+
+const num = numbers.filter((x) => {
+    return x>20;
 });
 
-// multiply by 2 
+console.log(num)
 
-const number = [2,4,6,8,10];
+// Q2 Even numbers
+const number = [1, 2, 3, 4, 5, 6, 7, 8];
 
-number.forEach((x) => {
-    console.log(x*2);
-} );
+const mat = number.filter((x) => {
+    return x % 2 ===0;
+});
 
-// index + values 
+console.log(mat);
 
-const names = ["Rahul", "Amit", "Manvesh", "Rohan"];
+// q3 Students who passed
+const marks = [35, 80, 42, 25, 90, 60];
 
-names.forEach((x,index,value) => {
-    console.log(x,index,value)
+const result  = marks.filter(function(mama){
+    return mama > 50;
 })
-
-
-/// calculate total 
-
-const prices = [100, 250, 50, 300];
-let total = 0;
-
-prices.forEach((x) => {
-    total = total + x;
-});
-
-console.log(total);
-
-// question 
-
-const numbers = [10, 20, 30, 40];
-
-numbers.forEach((x) => {
-    console.log(x+5);
-});
-
-// index,values
-
-const fal = ["Apple", "Banana", "Mango"];
-
-fal.forEach((u,index,element) => {
-    console.log(u,index,element);
-});
-
-// total 
-
-const marks = [70, 80, 90, 60];
-
-let result = 0;
-
-marks.forEach((b) => {
-    result = result + b;
-});
 
 console.log(result);
 
+// Q4 — Filter names
 
+const names = ["Amit", "Rahul", "Ankit", "Rohan", "Ajay"];
+
+const lala = names.filter(function(waw){
+    return waw.length>4;
+});
+
+console.log(lala);
