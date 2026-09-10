@@ -3,28 +3,20 @@
     padding: 0px;
 }
 
-.container{
-    display: grid;
-    height: 400px;
-    width: 400px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    /* grid-template-columns: 1fr 1fr; */
-    gap: 10px;
-    background-color: pink;
+.box{
+    background-color: brown;
+    height: 300px;
+    width: 300px;
 }
 
-.first{
-    background-color: aqua;
-}
+@media  (max-width: 600px) {.box{
+    background-color: blueviolet;
+    height: 300px;
+    width: 300px;
+}}
 
-.second{
-    background-color: red;
-}
-
-.third{
-    background-color: green;
-}
-
-.four{
-    background-color: yellow;
-}
+/* .box{
+    background-color: blueviolet;
+    height: 300px;
+    width: 300px;
+} */
