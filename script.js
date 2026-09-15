@@ -788,5 +788,21 @@
 
 // console.log(smallest); // 5
 
+// const title = document.getElementById("title");
+// const button = document.getElementById("btn");
 
+// button.addEventListener("click", function () {
+//   title.textContent = "Welcome!";
+// });
 
+// DOM
+
+// let btn = document.querySelector("#btn");
+
+// btn.addEventListener("click", function () {
+//     console.log("Button clicked!");
+// });
+
+btn.addEventListener("click", () => {
+    btn.textContent = "Clicked!";
+});

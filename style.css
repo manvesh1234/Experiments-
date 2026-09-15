@@ -3,20 +3,4 @@
     padding: 0px;
 }
 
-.box{
-    background-color: brown;
-    height: 300px;
-    width: 300px;
-}
 
-@media  (max-width: 600px) {.box{
-    background-color: blueviolet;
-    height: 300px;
-    width: 300px;
-}}
-
-/* .box{
-    background-color: blueviolet;
-    height: 300px;
-    width: 300px;
-} */
