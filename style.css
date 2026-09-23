@@ -4,7 +4,7 @@
 }
 
 
-body{
+/* body{
     background-color: rgb(39, 35, 35);
 }
 
@@ -27,4 +27,26 @@ div {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+} */
+
+button{
+    background-color: gray;
+     padding: 12px 25px;
+     font-size: medium;
+     border-radius: 10px;
+     margin: 10px;
+}
+
+div {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+body{
+    height: 100vh;
+    
 }
