@@ -4,3 +4,27 @@
 }
 
 
+body{
+    background-color: rgb(39, 35, 35);
+}
+
+h1{
+    color: wheat;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button{
+    background-color: gray;
+     padding: 12px 25px;
+     font-size: medium;
+     border-radius: 10px;
+    
+}
+
+div {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -948,13 +948,63 @@
 //      output.textContent = "Hello" + input.value;
 // })
 
-parent.addEventListener("click", () => {
-    console.log("parent");
-},true);
+// parent.addEventListener("click", () => {
+//     console.log("parent");
+// },true);
 
-child.addEventListener("click", () => {
-    console.log("Button");
+// child.addEventListener("click", () => {
+//     console.log("Button");
+// });
+
+const quotes = [
+  "Believe in yourself.",
+  "Never give up.",
+  "Keep moving forward.",
+  "Dream big and work hard.",
+  "Success starts with action.",
+  "Small steps create big results.",
+  "Your future depends on what you do today.",
+  "Stay focused and keep learning.",
+  "Mistakes are part of learning.",
+  "Discipline beats motivation.",
+  "Progress is better than perfection.",
+  "Make every day count.",
+  "You are capable of more than you think.",
+  "Difficult roads lead to meaningful destinations.",
+  "Don't wait for opportunity. Create it.",
+  "Focus on the process, not just the result.",
+  "Consistency creates success.",
+  "Learn from yesterday and build tomorrow.",
+  "Turn challenges into opportunities.",
+  "Start before you feel ready.",
+  "Your only limit is the one you set yourself.",
+  "Be patient with your progress.",
+  "Work quietly and let your results speak.",
+  "Every expert was once a beginner.",
+  "Keep going. You are getting better."
+];
+
+
+colorQ = [
+  "#00E5FF", // Cyan
+  "#A78BFA", // Soft Purple
+  "#FF6B9D", // Pink
+  "#64FFDA", // Mint
+  "#FFD166"  // Warm Yellow
+]
+
+
+const h1 = document.querySelector('h1');
+const button = document.querySelector('button');
+
+button.addEventListener('click', () => {
+    const xyz = (Math.floor(Math.random() * 25))
+    const q = (Math.floor(Math.random() * 5))
+
+    h1.textContent = quotes[xyz];
+    h1.style.color = colorQ[q]
 });
+
 
 
 
