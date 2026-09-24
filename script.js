@@ -1006,22 +1006,34 @@
 // });
 
 
-const parent = document.querySelector("#Parent");
+// const parent = document.querySelector("#Parent");
 
-parent.addEventListener("click", (e) => {
-   const child = e.target;
-   const body = document.querySelector("body");
+// parent.addEventListener("click", (e) => {
+//    const child = e.target;
+//    const body = document.querySelector("body");
 
-   body.style.backgroundColor = child.style.backgroundColor;
+//    body.style.backgroundColor = child.style.backgroundColor;
    
-});
+// });
+
+// const now = new Date();
+
+// console.log(now.toUTCString());
+// console.log(now.toISOString());
+// console.log(now.toString());
+// console.log(now.toLocaleString());
 
 
+// setInterval(() => {
+//     console.log("Hello");
+// }, 1000);
 
+const clock = document.querySelector("#clock");
 
-
-
-
+setInterval(() => {
+    const now = new Date();
+    clock.textContent = now.toLocaleTimeString();
+}, 1000);
 
 
 

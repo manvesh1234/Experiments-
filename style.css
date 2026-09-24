@@ -4,32 +4,7 @@
 }
 
 
-/* body{
-    background-color: rgb(39, 35, 35);
-}
-
-h1{
-    color: wheat;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-button{
-    background-color: gray;
-     padding: 12px 25px;
-     font-size: medium;
-     border-radius: 10px;
-    
-}
-
-div {
-    padding-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
-
-button{
+/* button{
     background-color: gray;
      padding: 12px 25px;
      font-size: medium;
@@ -48,5 +23,25 @@ div {
 
 body{
     height: 100vh;
-    
+} */
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(30, 21, 21);
+}
+
+#papa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: wheat;
+}
+
+#quote{
+    margin: 10px;
 }
