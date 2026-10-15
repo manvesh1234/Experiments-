@@ -1,17 +1,29 @@
-let order = new Promise((resolve, reject) => {
-    let success = false;
 
-    if (success) {
-        resolve("Laptop delivered!");
+let myPromise = new Promise((resolve, reject) => {
+    let laptopDelivered = true;
+
+    if (laptopDelivered) {
+        resolve("Laptop delivered successfully!");
     } else {
-        reject("Order cancelled!");
+        reject("Laptop delivery failed!");
     }
 });
 
-order
+myPromise
     .then((result) => {
-        console.log(result);
+        console.log("ASUS " + result);
+        return "Laptop is now ready to use!";
+    })
+    .then((message) => {
+        console.log(message);
+        return "Enjoy your new laptop!";
+    })
+    .then((finalMessage) => {
+        console.log(finalMessage);
     })
     .catch((error) => {
         console.log(error);
+    })
+    .finally(() => {
+        console.log("Laptop delivery process finished!");
     });
