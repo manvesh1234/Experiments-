@@ -1,48 +1,157 @@
 
-// let myPromise = new Promise((resolve, reject) => {
-//     let laptopDelivered = ;
+// // let myPromise = new Promise((resolve, reject) => {
+// //     let laptopDelivered = ;
 
-//     if (laptopDelivered) {
-//         resolve("Laptop delivered successfully!");
+// //     if (laptopDelivered) {
+// //         resolve("Laptop delivered successfully!");
+// //     } else {
+// //         reject("Laptop delivery failed!");
+// //     }
+// // });
+
+// // myPromise
+// //     .then((result) => {
+// //         console.log("ASUS " + result);
+// //         return "Laptop is now ready to use!";
+// //     })
+// //     .then((message) => {
+// //         console.log(message);
+// //         return "Enjoy your new laptop!";
+// //     })
+// //     .then((finalMessage) => {
+// //         console.log(finalMessage);
+// //     })
+// //     .catch((error) => {
+// //         console.log(error);
+// //     })
+// //     .finally(() => {
+// //         console.log("Laptop delivery process finished!");
+// //     });
+
+
+// fetch("https://jsonplaceholder.typicode.com/users/1")
+//     .then((response) => {
+//         if (!response.ok) {
+//             throw new Error("HTTP request failed");
+//         }
+
+//         return response.json();
+//     })
+//     .then((data) => {
+//         console.log(data);
+//     })
+//     .catch((error) => {
+//         console.log(error.message);
+//     })
+//     .finally(() => {
+//         console.log("Request completed!");
+//     });
+
+// const abc = () => {
+//     let a = 1;
+//     let b = 2;
+//     return a+b;
+
+// }
+
+// let result = abc();
+// console.log(result);
+
+
+// Promises
+// Create a Promise that resolves with the message "I completed JavaScript". Print the message using `.then()`.
+
+// const myPromise = new Promise ((resolve, reject) => {
+//     let statement = true;
+
+//     if (statement) {
+//       resolve ("I completed Javascript")
 //     } else {
-//         reject("Laptop delivery failed!");
+//         reject ("Failed")
 //     }
 // });
 
-// myPromise
-//     .then((result) => {
-//         console.log("ASUS " + result);
-//         return "Laptop is now ready to use!";
-//     })
-//     .then((message) => {
-//         console.log(message);
-//         return "Enjoy your new laptop!";
-//     })
-//     .then((finalMessage) => {
-//         console.log(finalMessage);
-//     })
-//     .catch((error) => {
-//         console.log(error);
-//     })
-//     .finally(() => {
-//         console.log("Laptop delivery process finished!");
-//     });
+// myPromise 
+//  .then((result) => {
+//     console.log(result)
+//  })
+//  .catch ((fail) => {
+//     console.log(fail)
+//  })
+
+//  Q2. Resolve or reject?
+// Create a variable `paymentDone = false`. If true, resolve with "Payment successful"; otherwise, reject with "Payment failed". Handle both outcomes.
+
+// [ ] 
+// Q3. Use your own parameter names
+// Create a Promise using `success` and `failure` instead of `resolve` and `reject`. Make it resolve with "Hello JavaScript".
+
+// [ ] 
+// Q4. Use `.finally()`
+// Create a Promise that rejects with "Something went wrong". Print the error and then print "Process finished" using `.finally()`.
+
+let paymentDone = new Promise((resolve,reject) => {
+    let paymentDone = false;
+
+  if (paymentDone) {
+    resolve ("Payment successful")
+  } else {
+    reject ("Payment failed")
+  }
+});
+
+paymentDone
+ .then((result) => {
+    console.log(result);
+ })
+ .catch((error) => {
+    console.log(error);
+ });
 
 
-fetch("https://jsonplaceholder.typicode.com/users/1")
-    .then((response) => {
-        if (!response.ok) {
-            throw new Error("HTTP request failed");
-        }
+ // Q3. Use your own parameter names
+// Create a Promise using `success` and `failure` instead of `resolve` and `reject`. Make it resolve with "Hello JavaScript".
 
-        return response.json();
-    })
-    .then((data) => {
-        console.log(data);
-    })
-    .catch((error) => {
-        console.log(error.message);
-    })
-    .finally(() => {
-        console.log("Request completed!");
-    });
+const mama = new Promise ((success,failure) => {
+    let mama = true ;
+
+    if (mama) {
+        success("Hello JavaScript")
+    } else {
+        failure("Problem")
+    }
+});
+
+mama
+.then((result) => {
+    console.log(result);
+})
+.catch((error) => {
+    console.log(error);
+});
+
+
+// Q4. Use `.finally()`
+// Create a Promise that rejects with "Something went wrong". Print the error and then print "Process finished" using `.finally()`.
+
+const dada = new Promise ((resolve,reject) => {
+    let data = false;
+
+    if(data){
+        resolve("success");
+    } else {
+        reject("Something went wrong");
+    }
+});
+
+dada
+.then((result)=> {
+    console.log(result);
+})
+.catch((error)=> {
+    console.log(error);
+})
+
+.finally(() => {
+    console.log("Process Finished Time OUT")
+})
